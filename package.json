@@ -1,0 +1,28 @@
+{
+  "name": "admin-pindie",
+  "version": "1.0.0",
+  "description": "нисего обысного)",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yachilenok/admin-pindie.git"
+  },
+  "author": "Yachilenok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yachilenok/admin-pindie/issues"
+  },
+  "homepage": "https://github.com/Yachilenok/admin-pindie#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.4",
+    "nodemon": "^3.1.0"
+  }
+}
