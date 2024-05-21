@@ -1,11 +1,11 @@
 const sendAllUsers = (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify(req.usersArray));
+  res.end(JSON.stringify(req.userArray));
 };
 
 const sendCreatedUser = (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify(req.users));
+  res.end(JSON.stringify(req.user));
 };
 
 const sendUpdatedUser = (req, res) => {
