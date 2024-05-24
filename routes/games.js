@@ -15,12 +15,15 @@ const {
   sendCreatedGame,
   sendUpdatedGame,
   sendDeleteGame,
+  sendGameById,
 } = require("../controllers/games");
 const { checkIfCategoriesAvaliable } = require("../middlewares/categories");
 const { checkIfUsersAreSafe } = require("../middlewares/users");
 const { checkAuth } = require("../middlewares/auth");
 
 gamesRouter.get("/games", findAllGames, sendAllGames);
+
+gamesRouter.get("/games/:id", findGameById, sendGameById);
 
 gamesRouter.post(
   "/games",

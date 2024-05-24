@@ -14,10 +14,13 @@ const {
   sendCreatedCategory,
   sendUpdatedCategory,
   sendDeleteCategory,
+  sendCategoryById,
 } = require("../controllers/categories");
 const { checkAuth } = require("../middlewares/auth");
 
 categoriesRouter.get("/categories", findAllCategories, sendAllCategories);
+
+categoriesRouter.get("/categories/:id", findCategoryById, sendCategoryById);
 
 categoriesRouter.post(
   "/categories",
